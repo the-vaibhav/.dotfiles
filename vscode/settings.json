@@ -1,0 +1,94 @@
+{
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\PATIL\\AppData\\Local\\nvim\\initt.lua",
+    "window.customTitleBarVisibility": "never",
+    "window.titleBarStyle": "native",
+    "apc.electron": {
+        "titleBarStyle": "hidden",
+        "opacity": 0.8
+    },
+    "apc.menubar.compact": true,
+    "window.menuBarVisibility": "toggle",
+    "apc.activityBar": {
+        "position": "bottom",
+        "hideSettings": true,
+        "size": 28
+    },
+    "html.autoClosingTags": true,
+    "javascript.autoClosingTags": true,
+    "typescript.autoClosingTags": true,
+    "breadcrumbs.enabled": true,
+    "reactSnippets.settings.importReactOnTop": false,
+    "editor.cursorBlinking": "phase",
+    "editor.find.cursorMoveOnType": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "git.openRepositoryInParentFolders": "never",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.env.windows": {},
+    "git.autofetch": true,
+    "workbench.layoutControl.enabled": false,
+    "editor.lineHeight": 1.2,
+    //////// ======================
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.mouseWheelZoom": true,
+    // "editor.wordWrap": "on",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#026362",
+        "statusBar.foreground": "#000",
+        "statusBar.debuggingForeground": "#000"
+    },
+    // editor
+    "editor.lineNumbers": "relative",
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.suggest.insertMode": "replace",
+    // vs code settings for activity bar and all
+    "workbench.tips.enabled": false,
+    //explorer options
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // typescript
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    //extension settings ====>
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": true,
+    //editor code actions ===>
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.sortImports": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+    "editor.fontFamily": "JetBrains Mono",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.minimap.enabled": false,
+    "symbols.hidesExplorerArrows": true,
+    "editor.formatOnSave": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "Hack Nerd Font Propo",
+    "workbench.iconTheme": "symbols",
+    "update.mode": "manual",
+    "workbench.colorTheme": "Dark Magic Tokyo",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "git.confirmSync": false,
+    "liveServer.settings.donotVerifyTags": true
+}
