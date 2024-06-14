@@ -3,7 +3,7 @@
         "asvetliakov.vscode-neovim": 1
     },
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
-    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\PATIL\\AppData\\Local\\nvim\\initt.lua",
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\PATIL\\AppData\\Local\\nvim\\int.lua",
     "window.customTitleBarVisibility": "never",
     "window.titleBarStyle": "native",
     "apc.electron": {
@@ -13,7 +13,7 @@
     "apc.menubar.compact": true,
     "window.menuBarVisibility": "toggle",
     "apc.activityBar": {
-        "position": "bottom",
+        "position": "top",
         "hideSettings": true,
         "size": 28
     },
@@ -44,7 +44,7 @@
         "statusBar.noFolderBackground": "#8FBCBB",
         "statusBar.debuggingBackground": "#026362",
         "statusBar.foreground": "#000",
-        "statusBar.debuggingForeground": "#000"
+        "statusBar.debuggingForeground": "#000",
     },
     // editor
     "editor.lineNumbers": "relative",
@@ -80,9 +80,7 @@
     "editor.formatOnSave": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.fontFamily": "Hack Nerd Font Propo",
-    "workbench.iconTheme": "symbols",
     "update.mode": "manual",
-    "workbench.colorTheme": "Dark Magic Tokyo",
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -90,5 +88,14 @@
         "scminput": false
     },
     "git.confirmSync": false,
-    "liveServer.settings.donotVerifyTags": true
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.colorTheme": "Dark Magic Tokyo",
+    "prisma.showPrismaDataPlatformNotification": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 3,
+    "workbench.editor.limit.perEditorGroup": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.productIconTheme": "material-product-icons",
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.iconTheme": "symbols"
 }
