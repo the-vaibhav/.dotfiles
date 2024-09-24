@@ -1,19 +1,20 @@
 {
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+    "vscode-neovim.compositeKeys": {
+        "jj": {
+            "command": "vscode-neovim.escape",
+        },
     },
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
-    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\PATIL\\AppData\\Local\\nvim\\int.lua",
     "window.customTitleBarVisibility": "never",
     "window.titleBarStyle": "native",
     "apc.electron": {
         "titleBarStyle": "hidden",
-        "opacity": 0.8
+        // "opacity": 0.9
     },
     "apc.menubar.compact": true,
     "window.menuBarVisibility": "toggle",
     "apc.activityBar": {
-        "position": "top",
+        "position": "bottom",
         "hideSettings": true,
         "size": 28
     },
@@ -28,7 +29,6 @@
     "git.openRepositoryInParentFolders": "never",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.accessibilitySupport": "off",
-    "terminal.integrated.env.windows": {},
     "git.autofetch": true,
     "workbench.layoutControl.enabled": false,
     "editor.lineHeight": 1.2,
@@ -79,23 +79,20 @@
     "symbols.hidesExplorerArrows": true,
     "editor.formatOnSave": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.fontFamily": "Hack Nerd Font Propo",
     "update.mode": "manual",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
     "git.confirmSync": false,
     "liveServer.settings.donotVerifyTags": true,
-    "workbench.colorTheme": "Dark Magic Tokyo",
+    "workbench.colorTheme": "Andromeda",
     "prisma.showPrismaDataPlatformNotification": false,
     "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 3,
+    "workbench.editor.limit.value": 5,
     "workbench.editor.limit.perEditorGroup": true,
     "github.copilot.editor.enableAutoCompletions": true,
     "workbench.productIconTheme": "material-product-icons",
     "editor.scrollbar.vertical": "hidden",
-    "workbench.iconTheme": "symbols"
+    "workbench.iconTheme": "symbols",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "github.copilot.preferredAccount": "the-vaibhav",
 }
