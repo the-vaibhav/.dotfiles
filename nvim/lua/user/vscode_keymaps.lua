@@ -1,24 +1,44 @@
+local opts = { noremap = true, silent = true }
+local keymap = vim.keymap.set
+
 -- set leader key
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+keymap("n", "<Space>", "", opts)
+
+-- yank to system clipboard
+keymap({"n", "v"}, "<leader>y", '"+y', opts)
+
+-- paste from system clipboard
+keymap({"n", "v"}, "<leader>p", '"+p', opts)
+
+-- paste preserves primal yanked piece
+keymap("v", "p", '"_dP', opts)
+
+-- better indent handling
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
 
 -- save
 vim.keymap.set('n', '<leader>w', '<cmd> w <CR>', opts)
 
--- quite editor
-vim.cmd('nmap <leader>q :q<cr>')
+-- move text up and down
+keymap("v", "J", ":m .+1<CR>==", opts)
+keymap("v", "K", ":m .-2<CR>==", opts)
+keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
 -- repeat previous f, t, F or T movement
 vim.keymap.set('n', '\'', ';')
 
--- -- paste without overwriting
+-- paste without overwriting
 vim.keymap.set('v', 'p', 'P')
 
 -- redo
 vim.keymap.set('n', 'U', '<C-r>')
- 
--- clear search highlighting
-vim.keymap.set('n', '<Esc>', ':nohlsearch<cr>')
+
+ -- removes highlighting after escaping vim search
+keymap("n", "<Esc>", "<Esc>:noh<CR>", opts)
 
 -- sync system clipboard
 vim.opt.clipboard = 'unnamedplus'
@@ -29,21 +49,19 @@ vim.opt.ignorecase = true
 -- disable "ignorecase" option if the search pattern contains upper case characters
 vim.opt.smartcase = true
 
--- open file in vscode
-vim.keymap.set("n", "<leader>p", function() vim.fn.VSCodeNotify("workbench.action.quickOpen") end)
-vim.keymap.set("n", "<leader>r", function() vim.fn.VSCodeNotify("editor.action.startFindReplaceAction") end)
-vim.keymap.set("n", "<leader>;", function() vim.fn.VSCodeNotify("workbench.action.showCommands") end)
-vim.keymap.set("n", "<leader>f", function() vim.fn.VSCodeNotify("workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup") end)
-vim.keymap.set("n", "<leader>t", function() vim.fn.VSCodeNotify("workbench.action.terminal.focus") end)
-vim.keymap.set("n", "<leader>e", function() vim.fn.VSCodeNotify("workbench.view.explorer") end)
-vim.keymap.set("n", "<leader>1", function() vim.fn.VSCodeNotify("workbench.action.openEditorAtIndex1") end)
-vim.keymap.set("n", "<leader>2", function() vim.fn.VSCodeNotify("workbench.action.openEditorAtIndex2") end)
-vim.keymap.set("n", "<leader>3", function() vim.fn.VSCodeNotify("workbench.action.openEditorAtIndex3") end)
-vim.keymap.set("n", "<leader>4", function() vim.fn.VSCodeNotify("workbench.action.openEditorAtIndex4") end)
+-- General Keymaps
+keymap({"n", "v"}, "<leader>t", "<cmd>lua require('vscode').action('workbench.action.terminal.toggleTerminal')<CR>")
+keymap({"n", "v"}, "<leader>p", "<cmd>lua require('vscode').action('workbench.action.quickOpen') <CR>")
+keymap({"n", "v"}, "<leader>q", "<cmd>lua require('vscode').action('workbench.action.closeActiveEditor') <CR>")
+keymap({"n", "v"}, "<leader>r", "<cmd>lua require('vscode').action('editor.action.startFindReplaceAction') <CR>")
+keymap({"n", "v"}, "<leader>;", "<cmd>lua require('vscode').action('workbench.action.showCommands') <CR>")
+keymap({"n", "v"}, "<leader>f", "<cmd>lua require('vscode').action('workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup') <CR>")
+keymap({"n", "v"}, "<leader>e", "<cmd>lua require('vscode').action('workbench.action.toggleSidebarVisibility') <CR>")
+keymap({"n", "v"}, "<leader>1", "<cmd>lua require('vscode').action('workbench.action.openEditorAtIndex1') <CR>")
+keymap({"n", "v"}, "<leader>2", "<cmd>lua require('vscode').action('workbench.action.openEditorAtIndex2') <CR>")
+keymap({"n", "v"}, "<leader>3", "<cmd>lua require('vscode').action('workbench.action.openEditorAtIndex3') <CR>")
+keymap({"n", "v"}, "<leader>4", "<cmd>lua require('vscode').action('workbench.action.openEditorAtIndex4') <CR>")
 
-local function vscode_notify(action)
-    vim.fn.VSCodeNotify(action)
-end
 
 vim.api.nvim_set_keymap('n', '<C-j>', '<cmd>lua vscode_notify("workbench.action.navigateDown")<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('x', '<C-j>', '<cmd>lua vscode_notify("workbench.action.navigateDown")<CR>', {noremap = true, silent = true})
@@ -53,3 +71,8 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<cmd>lua vscode_notify("workbench.action.
 vim.api.nvim_set_keymap('x', '<C-h>', '<cmd>lua vscode_notify("workbench.action.navigateLeft")<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<cmd>lua vscode_notify("workbench.action.navigateRight")<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('x', '<C-l>', '<cmd>lua vscode_notify("workbench.action.navigateRight")<CR>', {noremap = true, silent = true})
+
+-- Project Manager
+vim.keymap.set({"n", "v"}, "<leader>lw", "<cmd>lua require('vscode').action('projectManager.saveProject')<CR>")
+vim.keymap.set({"n", "v"}, "<leader>la", "<cmd>lua require('vscode').action('projectManager.listProjectsNewWindow')<CR>")
+vim.keymap.set({"n", "v"}, "<leader>le", "<cmd>lua require('vscode').action('projectManager.editProjects')<CR>")
