@@ -1,24 +1,29 @@
 {
+    /*  "apc.electron": {
+        "titleBarStyle": "hidden",
+        "opacity": 0.9,
+    },
+    "apc.menubar.compact": true,
+    "apc.activityBar": {
+        "position": "bottom",
+        "hideSettings": true,
+        "size": 28
+    },
+    "apc.font.family": "JetBrains Mono", */
+    "window.menuBarVisibility": "toggle",
+    // "window.titleBarStyle": "custom",
+    "workbench.activityBar.location": "hidden",
+    // "workbench.statusBar.visible": false,
+    "window.commandCenter": false,
+    "window.title": "Patil",
+    // neovim ===>
     "vscode-neovim.compositeKeys": {
         "jj": {
             "command": "vscode-neovim.escape",
         },
     },
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
-    "window.customTitleBarVisibility": "never",
-    "window.titleBarStyle": "native",
-    "apc.electron": {
-        "titleBarStyle": "hidden",
-        // "opacity": 0.9
-    },
-    "apc.menubar.compact": true,
-    "window.menuBarVisibility": "toggle",
-    "apc.activityBar": {
-        "position": "bottom",
-        "hideSettings": true,
-        "size": 28
-    },
-    "html.autoClosingTags": true,
+    "html.autoclosingtags": true,
     "javascript.autoClosingTags": true,
     "typescript.autoClosingTags": true,
     "breadcrumbs.enabled": true,
@@ -39,6 +44,7 @@
     // "editor.wordWrap": "on",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
+    // Status Bar customization --->
     "workbench.colorCustomizations": {
         "statusBar.background": "#8FBCBB",
         "statusBar.noFolderBackground": "#8FBCBB",
@@ -71,28 +77,31 @@
         "source.sortImports": "explicit",
         "source.addMissingImports": "explicit"
     },
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "editor.minimap.enabled": false,
+    // use to fold the function and all
+    "editor.folding": false,
     "symbols.hidesExplorerArrows": true,
     "editor.formatOnSave": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "update.mode": "manual",
     "git.confirmSync": false,
     "liveServer.settings.donotVerifyTags": true,
-    "workbench.colorTheme": "Andromeda",
-    "prisma.showPrismaDataPlatformNotification": false,
     "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 5,
+    "workbench.editor.limit.value": 4,
     "workbench.editor.limit.perEditorGroup": true,
     "github.copilot.editor.enableAutoCompletions": true,
-    "workbench.productIconTheme": "material-product-icons",
-    "editor.scrollbar.vertical": "hidden",
-    "workbench.iconTheme": "symbols",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
     "github.copilot.preferredAccount": "the-vaibhav",
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "symbols",
+    "terminal.integrated.fontFamily": "JetBRainsMono Nerd Font",
+    "vscode-neovim.neovimClean": false,
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.editor.showTabs": "none",
 }
