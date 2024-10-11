@@ -26,8 +26,6 @@ $time\
 [ ](fg:purple)\
 $line_break$character"""
 
-add_newline = false
-
 palette = 'catppuccin_mocha'
 
 [palettes.gruvbox_dark]
@@ -75,9 +73,7 @@ disabled = false
 style = "bg:surface0 fg:text"
 
 [os.symbols]
-Amazon = "󰍲"
-Windows = ""
-Android = ""
+Windows = "󱄛"
 Ubuntu = "󰕈"
 SUSE = ""
 Raspbian = "󰐿"
@@ -88,10 +84,14 @@ Linux = "󰌽"
 Gentoo = "󰣨"
 Fedora = "󰣛"
 Alpine = ""
+Amazon = ""
+Android = ""
 Arch = "󰣇"
+Artix = "󰣇"
 CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
@@ -103,7 +103,6 @@ format = '[ $user ]($style)'
 style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
 truncation_length = 3
-truncate_to_repo = false
 truncation_symbol = "…/"
 
 [directory.substitutions]
