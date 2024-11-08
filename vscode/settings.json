@@ -9,10 +9,11 @@
         "hideSettings": true,
         "size": 28
     },
-    "apc.font.family": "JetBrains Mono", */
+*/
+    "apc.font.family": "JetBrains Mono",
     "window.menuBarVisibility": "toggle",
     // "window.titleBarStyle": "custom",
-    "workbench.activityBar.location": "hidden",
+    "workbench.activityBar.location": "bottom",
     // "workbench.statusBar.visible": false,
     "window.commandCenter": false,
     "window.title": "Patil",
@@ -101,7 +102,16 @@
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "symbols",
     "terminal.integrated.fontFamily": "JetBRainsMono Nerd Font",
-    "vscode-neovim.neovimClean": false,
     "workbench.colorTheme": "Catppuccin Frappé",
     "workbench.editor.showTabs": "none",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    // syncing issue of neovim vscode 
+    "vscode-neovim.neovimClean": true,
 }
