@@ -111,7 +111,5 @@
         "scminput": false
     },
     "zenMode.centerLayout": false,
-    "zenMode.hideLineNumbers": false,
-    // syncing issue of neovim vscode 
-    "vscode-neovim.neovimClean": true,
+    "zenMode.hideLineNumbers": false
 }
