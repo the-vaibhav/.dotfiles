@@ -32,7 +32,7 @@ format = '[[🕥 $time](bold cyan)]($style)'
 
 [cmd_duration]
 min_time = 500
-format = '[ ║](bold cyan) [$duration](bold cyan)'
+format = '[ ┇](bold cyan) [$duration](bold cyan)'
 
 [username]
 show_always = true
@@ -44,7 +44,7 @@ format = '[$user ]($style)'
 style ='bold purple'
 read_only='🔒'
 read_only_style='red'
-format= '[$path]($style)[$read_only]($read_only_style) '
+format= '[$path]($style)[$read_only]($read_only_style)'
 truncation_length = 2
 truncation_symbol = '…/'
 truncate_to_repo = false
@@ -62,10 +62,10 @@ truncate_to_repo = false
 [git_branch]
 style = 'fg:blue'
 symbol = ' '
-format = '[║](bold blue) [$symbol$branch ]($style)'
+format = '[ ┇](bold blue) [$symbol$branch]($style)'
 
 [git_status]
-format = '([\[$all_status$ahead_behind\] ]($style))'
+format = '([\[$all_status$ahead_behind\]]($style))'
 
 [character]
 disabled = false
@@ -94,7 +94,7 @@ Fedora = "󰣛"
 Alpine = ""
 Amazon = ""
 Android = ""
-Arch = "�"
+Arch = "󰣇"
 Artix = "󰣇"
 CentOS = ""
 Debian = "󰣚"
@@ -103,47 +103,47 @@ RedHatEnterprise = "󱄛"
 
 [nodejs]
 symbol = ""
-format = '[║](bold green) [$symbol( $version)](bold green)'
+format = '[ ┇](bold green) [$symbol( $version)](bold green)'
 
 [c]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [php]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [java]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [kotlin]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [haskell]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [python]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[┇][ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [docker_context]
 symbol = ' '
