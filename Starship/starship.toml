@@ -45,8 +45,8 @@ style ='bold purple'
 read_only='🔒'
 read_only_style='red'
 format= '[$path]($style)[$read_only]($read_only_style)'
-truncation_length = 2
-truncation_symbol = '…/'
+truncation_length = 1
+truncation_symbol = '~/'
 truncate_to_repo = false
 
 [directory.substitutions]
@@ -81,7 +81,7 @@ disabled = false
 style = "bg:surface0 fg:red"
 
 [os.symbols]
-Windows = "🎧 "
+Windows = "󱄛 "
 Ubuntu = "󰕈"
 SUSE = ""
 Raspbian = "󰐿"
