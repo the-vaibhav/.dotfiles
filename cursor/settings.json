@@ -1,8 +1,10 @@
 {
-    "apc.statusBar": {
-        "position": "editor-bottom"
-    },
+    // apc customization
     "apc.font.family": "JetBrains Mono",
+    "apc.electron": {
+        // "opacity": 0.9
+    },
+    "apc.menubar.compact": true,
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.location": "bottom",
     "window.commandCenter": false,
@@ -72,7 +74,6 @@
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 4,
     "workbench.editor.limit.perEditorGroup": true,
-    "github.copilot.editor.enableAutoCompletions": true,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -81,8 +82,7 @@
     "workbench.iconTheme": "symbols",
     "terminal.integrated.fontFamily": "JetBRainsMono Nerd Font",
     "vscode-neovim.neovimClean": false,
-    "workbench.colorTheme": "Catppuccin Frappé",
-    "workbench.editor.showTabs": "none",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -94,5 +94,6 @@
         "markdown",
         "scminput"
     ],
-    "workbench.activityBar.orientation": "vertical"
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.editor.showTabs": "none",
 }
