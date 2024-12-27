@@ -14,3 +14,9 @@ bind '"\C-l":'
 if [ "$WT_SESSION" ]; then
     export STARSHIP_CONFIG=~/.config/starship-windows.toml
 fi
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
